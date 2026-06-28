@@ -95,6 +95,20 @@ kpis         = ["Defect Rate", "Lead Time", "Downtime", "OEE"]
 # ── Header ────────────────────────────────────────────────────────────────────
 st.title("Manufacturing KPI Dashboard")
 
+st.markdown("""
+<div style="margin-top:-10px; margin-bottom:20px; line-height:1.6;">
+    <div style="font-size:22px; font-weight:600; color:#1F4E79;">
+        Control KPIs Dashboard
+    </div>
+    <div style="font-size:18px; color:#444;">
+        Khedr Trust Company
+    </div>
+    <div style="font-size:16px; color:#666;">
+        Made by: Muhammed Zidan Abdallah
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
 # ── Month Filter (top, inline) ─────────────────────────────────────────────
 st.markdown("**Filter by Month:**")
 fc1, fc2, fc3, _ = st.columns([1,1,1,5])
